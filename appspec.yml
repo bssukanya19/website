@@ -5,12 +5,6 @@ files:
   - source: /
     destination: /usr/share/nginx/html
 
-permissions:
-  - object: /usr/share/nginx/html
-    owner: nginx
-    group: nginx
-    mode: 755
-
 hooks:
   AfterInstall:
     - location: scripts/install.sh
